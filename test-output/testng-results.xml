@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46685" started-at="2019-01-23T09:07:43Z" finished-at="2019-01-23T09:08:30Z">
+  <suite name="Default suite" duration-ms="19461" started-at="2019-01-23T09:08:56Z" finished-at="2019-01-23T09:09:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46685" started-at="2019-01-23T09:07:43Z" finished-at="2019-01-23T09:08:30Z">
+    <test name="Default test" duration-ms="19461" started-at="2019-01-23T09:08:56Z" finished-at="2019-01-23T09:09:16Z">
       <class name="Selenium.Topic_01_Setup_Environment">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Selenium.Topic_01_Setup_Environment@75412c2f]" name="beforeClass" is-config="true" duration-ms="41989" started-at="2019-01-23T16:07:43Z" finished-at="2019-01-23T16:08:25Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Selenium.Topic_01_Setup_Environment@75412c2f]" name="beforeClass" is-config="true" duration-ms="17767" started-at="2019-01-23T16:08:56Z" finished-at="2019-01-23T16:09:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_04_ChecksSlackVsGithub()[pri:0, instance:Selenium.Topic_01_Setup_Environment@75412c2f]" name="TC_04_ChecksSlackVsGithub" duration-ms="863" started-at="2019-01-23T16:08:25Z" finished-at="2019-01-23T16:08:26Z">
+        <test-method status="PASS" signature="TC_04_CheckSlackVsGithub()[pri:0, instance:Selenium.Topic_01_Setup_Environment@75412c2f]" name="TC_04_CheckSlackVsGithub" duration-ms="182" started-at="2019-01-23T16:09:14Z" finished-at="2019-01-23T16:09:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_04_ChecksSlackVsGithub -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:Selenium.Topic_01_Setup_Environment@75412c2f]" name="afterClass" is-config="true" duration-ms="3751" started-at="2019-01-23T16:08:26Z" finished-at="2019-01-23T16:08:30Z">
+        </test-method> <!-- TC_04_CheckSlackVsGithub -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:Selenium.Topic_01_Setup_Environment@75412c2f]" name="afterClass" is-config="true" duration-ms="1487" started-at="2019-01-23T16:09:14Z" finished-at="2019-01-23T16:09:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
