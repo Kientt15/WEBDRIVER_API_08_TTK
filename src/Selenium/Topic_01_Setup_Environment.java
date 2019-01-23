@@ -20,35 +20,38 @@ public class Topic_01_Setup_Environment {
   @BeforeClass
   public void beforeClass() {
 	  driver = new	FirefoxDriver();
-	  driver.get("http://live.guru99.com/");
+	  driver.get("http://live.guru99.com/index.php/customer/account/login/");
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  driver.manage().window().maximize();
 	  }
+
+	  
+  
   @Test
-  public void TC_01_CheckUrl() {
-	  String homePageUrl= driver.getCurrentUrl();
-	  Assert.assertEquals(homePageUrl, "http://live.guru99.com/");
+  public void TC_01_Xpath_Example() {
+	  driver.findElement(By.id("email")).sendKeys("");
 	  
+	
+//	  <input id="email" class="input-text required-entry validate-email" 
+//	  type="email" title="Email Address" value="" name="login[username]" spellcheck="false" 
+//	  autocorrect="off" autocapitalize="off"/>
 	  
-  }
-  @Test
-  public void TC_02_CheckTitle() {
-	  String homePageTitle= driver.getTitle();
-	  Assert.assertEquals(homePageTitle, "Home page");
-	  
-	  
-  }
-  @Test
-  public void TC_03_HomePageLogoDisplayer() {
-	  WebElement homePageLogo = driver.findElement(By.xpath("//img[contains(@src, 'logo.png')]"));
-	  Assert.assertTrue(homePageLogo.isDisplayed());
-	  
-	  
-  }
-  @Test
-  public void TC_04_CheckSlackVsGithub() {
-	  WebElement homePageLogo = driver.findElement(By.xpath("//img[contains(@src, 'logo.png')]"));
-	  Assert.assertTrue(homePageLogo.isDisplayed());
+//	driver.findElement(By.className("input-text required-entry validate-email"));
+//	driver.findElement(By.id("email"));
+//	driver.findElement(By.cssSelector("input[id='email']"));
+//	driver.findElement(By.name("login[username]"));
+//	driver.findElement(By.linkText(""));
+//	driver.findElement(By.partialLinkText(""));
+//	driver.findElement(By.xpath("//input[@id='email']"));
+//	driver.findElement(By.tagName("input"));
+//	
+///*	<a title="Site Map" href="http://live.guru99.com/index.php/catalog/seo_sitemap/category/">Site Map</a>*/
+//	
+//	driver.findElement(By.linkText("Site Map"));
+//	driver.findElement(By.partialLinkText("Site"));
+//	driver.findElement(By.partialLinkText("Map"));
+	
+	
 	  
 	  
   }
