@@ -45,6 +45,13 @@ public class Topic_01_Setup_Environment {
 	  
 	  
   }
+  @Test
+  public void TC_04_CheckSlackVsGithub() {
+	  WebElement homePageLogo = driver.findElement(By.xpath("//img[contains(@src, 'logo.png')]"));
+	  Assert.assertTrue(homePageLogo.isDisplayed());
+	  
+	  
+  }
 
   @AfterClass
   public void afterClass() {
