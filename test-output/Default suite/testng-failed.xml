@@ -6,8 +6,8 @@
       <class name="Selenium.Topic_01_Setup_Environment">
         <methods>
           <include name="beforeClass"/>
+          <include name="TC_05_CreatAnAccount"/>
           <include name="afterClass"/>
-          <include name="TC_01_CheckTitle"/>
         </methods>
       </class> <!-- Selenium.Topic_01_Setup_Environment -->
     </classes>
