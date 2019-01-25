@@ -34,124 +34,124 @@ public class Topic_01_Setup_Environment {
 	  driver = new	FirefoxDriver();
 	  
   
-	  //driver.get("http://live.guru99.com/index.php/customer/account/create/");
+//driver.get("http://live.guru99.com/index.php/customer/account/create/");
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  driver.manage().window().maximize();
 	  }
 
 	  
   
-//  @Test
-//  public void TC_01_Xpath_Example() throws Exception {
-//	  //id
-//	  driver.findElement(By.id("email")).sendKeys("automationid@gmail.com");
-//	  Thread.sleep(2000);
-//	  driver.findElement(By.id("email")).clear();
-//	  
-//	  //Xpath
-//	  driver.findElement(By.xpath("//input[@id='email']")).sendKeys("automationxpath@gmail.com");
-//	  Thread.sleep(2000);
-//	  driver.findElement(By.xpath("//input[@id='email']")).clear();
-//	
-//	  //class
-//	  driver.findElement(By.className("validate-email")).sendKeys("automationclass@gmail.com");
-//	  Thread.sleep(2000);
-//	  driver.findElement(By.className("validate-email")).clear();
-//	  
-//	  //Xpath
-//	  driver.findElement(By.xpath("//input[@class='input-text required-entry validate-email']")).sendKeys("automationcxpath@gmail.com");
-//	  Thread.sleep(2000);
-//	  driver.findElement(By.xpath("//input[@class='input-text required-entry validate-email']")).clear();	
-//	  
-//	  //name
-//	  driver.findElement(By.name("login[username]")).sendKeys("automationname@gmail.com");
-//	  Thread.sleep(2000);
-//	  driver.findElement(By.name("login[username]")).clear();
-//	  
-//	  //Xpath
-//	  driver.findElement(By.xpath("//input[@name='login[username]']")).sendKeys("automationxpath@gmail.com");
-//	  Thread.sleep(2000);
-//	  driver.findElement(By.xpath("//input[@name='login[username]']")).clear();
-//	  
-//  }
+  @Test
+  public void TC_01_Xpath_Example() throws Exception {
+	  //id
+	  driver.findElement(By.id("email")).sendKeys("automationid@gmail.com");
+	  Thread.sleep(2000);
+	  driver.findElement(By.id("email")).clear();
+	  
+	  //Xpath
+	  driver.findElement(By.xpath("//input[@id='email']")).sendKeys("automationxpath@gmail.com");
+	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("//input[@id='email']")).clear();
+	
+	  //class
+	  driver.findElement(By.className("validate-email")).sendKeys("automationclass@gmail.com");
+	  Thread.sleep(2000);
+	  driver.findElement(By.className("validate-email")).clear();
+	  
+	  //Xpath
+	  driver.findElement(By.xpath("//input[@class='input-text required-entry validate-email']")).sendKeys("automationcxpath@gmail.com");
+	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("//input[@class='input-text required-entry validate-email']")).clear();	
+	  
+	  //name
+	  driver.findElement(By.name("login[username]")).sendKeys("automationname@gmail.com");
+	  Thread.sleep(2000);
+	  driver.findElement(By.name("login[username]")).clear();
+	  
+	  //Xpath
+	  driver.findElement(By.xpath("//input[@name='login[username]']")).sendKeys("automationxpath@gmail.com");
+	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("//input[@name='login[username]']")).clear();
+	  
+  }
   
-//  @Test
-//	public void TC_02_Selenium() throws Exception {
-//	  driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Selenium Advanced Online");;
-//	  Thread.sleep(3000);
-//	
-//	  driver.findElement(By.xpath("//input[@title='First Name']")).sendKeys("First name");;
-//	  Thread.sleep(3000);
-//	
-//	  driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Tran Trung ");;
-//	  Thread.sleep(3000);
-//	
-//}
-//  @Test
-//	public void TC_01_LoginEmpty() throws Exception {
-//	  driver.get("http://live.guru99.com/");
-//	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
-//	  
-//	  driver.findElement(By.id("email")).sendKeys("");
-//	  driver.findElement(By.name("login[password]")).sendKeys("");
-//	  driver.findElement(By.xpath("//button[@title='Login']")).click();
-//	  Thread.sleep(3000);
-//	  
-//	  String EmailErrorMessage = driver.findElement(By.id("advice-required-entry-email")).getText();
-//	  Assert.assertEquals(EmailErrorMessage, "This is a required field.");
-//	  
-//	  String PassWordErrorMessage = driver.findElement(By.id("advice-required-entry-pass")).getText();
-//	  Assert.assertEquals(PassWordErrorMessage, "This is a required field.");
-//	  
-//  }
-//  
-//  @Test
-//	public void TC_02_LoginWithEmailInvalid() throws Exception {
-//	  driver.get("http://live.guru99.com/");
-//	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
-//	  
-//	  driver.findElement(By.id("email")).sendKeys("123434234@12312.123123");
-//	  driver.findElement(By.name("login[password]")).sendKeys("");
-//	  driver.findElement(By.xpath("//button[@title='Login']")).click();
-//	  
-//	  Thread.sleep(3000);
-//	  
-//	  String emailErrorMessage = driver.findElement(By.id("advice-validate-email-email")).getText();
-//	  Assert.assertEquals(emailErrorMessage, "Please enter a valid email address. For example johndoe@domain.com.");
-//	  
-//}
-//  
-//  @Test
-//	public void TC_03_LoginWithPassWordLessSixCharacter() throws Exception {
-//	  driver.get("http://live.guru99.com/");
-//	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
-//	  
-//	  driver.findElement(By.id("email")).sendKeys("automation@gmail.com");
-//	  driver.findElement(By.name("login[password]")).sendKeys("123");
-//	  driver.findElement(By.xpath("//button[@title='Login']")).click();
-//	  
-//	  Thread.sleep(3000);
-//	  
-//	  String emailErrorMessage = driver.findElement(By.id("advice-validate-password-pass")).getText();
-//	  Assert.assertEquals(emailErrorMessage, "Please enter 6 or more characters without leading or trailing spaces."); 
-//	  
-//}
-//  
-//  @Test
-//	public void TC_04_LoginWithPassWordIncorrect() throws Exception {
-//	  driver.get("http://live.guru99.com/");
-//	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
-//	  
-//	  driver.findElement(By.id("email")).sendKeys("automation@gmail.com");
-//	  driver.findElement(By.name("login[password]")).sendKeys("12345678900");
-//	  driver.findElement(By.xpath("//button[@title='Login']")).click();
-//	  
-//	  Thread.sleep(3000);
-//	  
-//	  String emailErrorMessage = driver.findElement(By.xpath("//div[@class='account-login']//span[text()='Invalid login or password.']")).getText();
-//	  Assert.assertEquals(emailErrorMessage, "Invalid login or password.");
-//	  
-//}
+  @Test
+	public void TC_02_Selenium() throws Exception {
+	  driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Selenium Advanced Online");;
+	  Thread.sleep(3000);
+	
+	  driver.findElement(By.xpath("//input[@title='First Name']")).sendKeys("First name");;
+	  Thread.sleep(3000);
+	
+	  driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Tran Trung ");;
+	  Thread.sleep(3000);
+	
+}
+  @Test
+	public void TC_01_LoginEmpty() throws Exception {
+	  driver.get("http://live.guru99.com/");
+	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
+	  
+	  driver.findElement(By.id("email")).sendKeys("");
+	  driver.findElement(By.name("login[password]")).sendKeys("");
+	  driver.findElement(By.xpath("//button[@title='Login']")).click();
+	  Thread.sleep(3000);
+	  
+	  String EmailErrorMessage = driver.findElement(By.id("advice-required-entry-email")).getText();
+	  Assert.assertEquals(EmailErrorMessage, "This is a required field.");
+	  
+	  String PassWordErrorMessage = driver.findElement(By.id("advice-required-entry-pass")).getText();
+	  Assert.assertEquals(PassWordErrorMessage, "This is a required field.");
+	  
+  }
+  
+  @Test
+	public void TC_02_LoginWithEmailInvalid() throws Exception {
+	  driver.get("http://live.guru99.com/");
+	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
+	  
+	  driver.findElement(By.id("email")).sendKeys("123434234@12312.123123");
+	  driver.findElement(By.name("login[password]")).sendKeys("");
+	  driver.findElement(By.xpath("//button[@title='Login']")).click();
+	  
+	  Thread.sleep(3000);
+	  
+	  String emailErrorMessage = driver.findElement(By.id("advice-validate-email-email")).getText();
+	  Assert.assertEquals(emailErrorMessage, "Please enter a valid email address. For example johndoe@domain.com.");
+	  
+}
+  
+  @Test
+	public void TC_03_LoginWithPassWordLessSixCharacter() throws Exception {
+	  driver.get("http://live.guru99.com/");
+	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
+	  
+	  driver.findElement(By.id("email")).sendKeys("automation@gmail.com");
+	  driver.findElement(By.name("login[password]")).sendKeys("123");
+	  driver.findElement(By.xpath("//button[@title='Login']")).click();
+	  
+	  Thread.sleep(3000);
+	  
+	  String emailErrorMessage = driver.findElement(By.id("advice-validate-password-pass")).getText();
+	  Assert.assertEquals(emailErrorMessage, "Please enter 6 or more characters without leading or trailing spaces."); 
+	  
+}
+  
+  @Test
+	public void TC_04_LoginWithPassWordIncorrect() throws Exception {
+	  driver.get("http://live.guru99.com/");
+	  driver.findElement(By.xpath("//div[@class='footer']//a[text()='My Account']")).click();
+	  
+	  driver.findElement(By.id("email")).sendKeys("automation@gmail.com");
+	  driver.findElement(By.name("login[password]")).sendKeys("12345678900");
+	  driver.findElement(By.xpath("//button[@title='Login']")).click();
+	  
+	  Thread.sleep(3000);
+	  
+	  String emailErrorMessage = driver.findElement(By.xpath("//div[@class='account-login']//span[text()='Invalid login or password.']")).getText();
+	  Assert.assertEquals(emailErrorMessage, "Invalid login or password.");
+	  
+}
   
   @Test
 	public void TC_05_CreatAnAccount() throws Exception {
@@ -190,29 +190,27 @@ public class Topic_01_Setup_Environment {
 
   
 	  
+/*	  
+	  <input id="email" class="input-text required-entry validate-email" 
+	  type="email" title="Email Address" value="" name="login[username]" spellcheck="false" 
+	  autocorrect="off" autocapitalize="off"/>
 	  
-//	  <input id="email" class="input-text required-entry validate-email" 
-//	  type="email" title="Email Address" value="" name="login[username]" spellcheck="false" 
-//	  autocorrect="off" autocapitalize="off"/>
-	  
-//	driver.findElement(By.className("input-text required-entry validate-email"));
-//	driver.findElement(By.id("email"));
-//	driver.findElement(By.cssSelector("input[id='email']"));
-//	driver.findElement(By.name("login[username]"));
-//	driver.findElement(By.linkText(""));
-//	driver.findElement(By.partialLinkText(""));
-//	driver.findElement(By.xpath("//input[@id='email']"));
-//	driver.findElement(By.tagName("input"));
-//	
-///*	<a title="Site Map" href="http://live.guru99.com/index.php/catalog/seo_sitemap/category/">Site Map</a>*/
-//	
-//	driver.findElement(By.linkText("Site Map"));
-//	driver.findElement(By.partialLinkText("Site"));
-//	driver.findElement(By.partialLinkText("Map"));
+	driver.findElement(By.className("input-text required-entry validate-email"));
+	driver.findElement(By.id("email"));
+	driver.findElement(By.cssSelector("input[id='email']"));
+	driver.findElement(By.name("login[username]"));
+	driver.findElement(By.linkText(""));
+	driver.findElement(By.partialLinkText(""));
+	driver.findElement(By.xpath("//input[@id='email']"));
+	driver.findElement(By.tagName("input"));
 	
+	<a title="Site Map" href="http://live.guru99.com/index.php/catalog/seo_sitemap/category/">Site Map</a>
 	
-	  
-	  
+	driver.findElement(By.linkText("Site Map"));
+	driver.findElement(By.partialLinkText("Site"));
+	driver.findElement(By.partialLinkText("Map"));*/
+	
+
   
 
   @AfterClass
